@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستندات طلبات قطاع التخطيط العمراني</title>
+    <style>
+        /* التنسيق الأساسي */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl; 
+            text-align: center;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+            /* --- تنسيقات وضع الشعار والعنوان --- */
+            display: flex; /* لتنظيم العناصر الداخلية */
+            align-items: center; /* محاذاة عمودية */
+            justify-content: center; /* محاذاة h1 في الوسط مبدئياً */
+            position: relative; /* لتموضع الشعار المطلق */
+            padding-right: 140px; /* لضمان عدم تداخل النص مع الشعار */
+        }
+        header h1 {
+             margin: 0;
+             font-size: 2.5em;
+             text-align: center;
+             flex-grow: 1; /* للسماح للعنوان بأخذ المساحة المتبقية */
+        }
+        
+        /* --- تنسيق الشعار (الصورة المستطيلة في الطرف الأيمن) --- */
+        .header-logo {
+            position: absolute; /* تحديد الموضع المطلق */
+            right: 20px; /* وضعه على الطرف الأيمن (20 بكسل من الحافة) */
+            top: 50%;
+            transform: translateY(-50%); /* للتوسيط العمودي */
+            
+            /* --- تحديد الأبعاد المستطيلة --- */
+            width: 100px; /* عرض الشعار (يمكن تعديله) */
+            height: 100px; /* ارتفاع الشعار (يمكن تعديله) */
+            
+            /* للتأكد من أن الصورة تملأ الأبعاد المحددة دون تشويه كبير */
+            object-fit: contain; 
+            background-color: white; /* خلفية بيضاء للشعار إذا كان به شفافية */
+            padding: 5px; /* تباعد داخلي بسيط */
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        /* تصميم الروابط الزرقاء كبطاقات */
+        .link-cards {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 20px;
+            justify-content: center;
+        }
+        .service-link {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 25px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            flex: 1 1 calc(33% - 20px);
+            min-width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .service-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+        }
+        .service-link span {
+            display: block;
+            margin-top: 5px;
+            font-size: 0.8em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="assets/1000005927.jpg" alt="شعار قطاع التخطيط العمراني" class="header-logo">
+        <h1> طلبات قطاع التخطيط العمراني</h1>
+    </header>
+
+    <div class="container">
+        
+        <h2></h2>
+        
+        <div class="link-cards">
+            
+            <a href="https://drive.google.com/file/d/1gixWJrjprNy8_V6amu1GDhrfbvrlezvU/view?usp=drivesdk" class="service-link">
+                ١- إعادة المسح
+            </a>
+
+            <a href="https://drive.google.com/file/d/1UqH8TohJAdMzPxiieV6fIn7wsMaadkB0/view?usp=drivesdk" class="service-link">
+                ٢- تغيير الاستعمال
+            </a>
+
+            <a href="https://drive.google.com/file/d/1_olRieDQYw8vL35zdfViIuIE1905kLIV/view?usp=drivesdk" class="service-link">
+                ٣- الدمج
+            </a>
+
+            <a href="https://drive.google.com/file/d/1UE_ZjW-b_C5OMbY8gJzYv35xhfWod60W/view?usp=drivesdk" class="service-link">
+                ٤- تقسيم الأراضي
+            </a>
+
+            <a href="https://drive.google.com/file/d/1Ymw28hzRdRYDXzAvFPDai1DUquL1S9Kl/view?usp=drivesdk" class="service-link">
+        ٥- مشاريع التقسيم بنظام الشقق و الطبقات
+            </a>
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>
